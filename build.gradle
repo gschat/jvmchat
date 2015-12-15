@@ -1,0 +1,20 @@
+group 'com.github.gschat'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    maven { url 'http://maven.oschina.net/content/groups/public/'}
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'com.github.gsrpc:jvmrpc:v0.1-beta.6'
+    testCompile 'junit:junit:4.12'
+    testCompile "org.mockito:mockito-core:1.9.5"
+    testCompile 'ch.qos.logback:logback-classic:1.1.3'
+
+}
